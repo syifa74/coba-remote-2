@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>coba html</title>
+		<style>
+
+			p {
+				background-color: lightgreen;
+				
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<p>biodata saya</p>
+		</div>
+		<script>
+			function starpattern(){
+				for(var i=1;i<=5;i++){
+					for(var j=1;j<=i;j++){
+						document.write("*");
+					}
+					document.write("<br>");
+				}
+				for(var k=1;k<=4;k++){
+					for(var l=k;l<=4;l++){
+						document.write("*");
+					}
+					document.write("<br>");
+				}
+				var m = 1;
+				for(var n=0;n<5;n++){
+					for(var o=0;o<m;o++){
+						document.write("*");
+					}
+					var m = m + 3;
+					document.write("<br>");
+				}
+				// ---------------------
+				var c = 4;
+				for(var a=0;a<5;a++){
+
+					for(var b=0;b<c;b++){
+						document.write('o ');
+					}
+					var c = c - 1;
+					for(var b=0;b<=a;b++){
+						document.write("* ");
+					}
+					document.write("<br>")
+				}
+				//---------------
+
+				var rows = 6;
+				var apalah = 0;
+				for(var d=1;d<=rows;d++){
+					for(var e=1;e<=(rows-d);e++){
+						document.write("&nbsp;&nbsp;");
+					}
+					while(apalah != (2*d-1)){
+						document.write("*");
+						apalah++;
+					}
+					apalah = 0;
+					document.write("<br>");				
+				}
+
+				var row = 5;
+				for(var i=1;i<=row;i++){
+					for(var j=1;j<=(row-i);j++){
+						document.write("&nbsp;&nbsp;");
+					}
+					for(var k=1;k<=(2*i-1);k++){
+						document.write("*");
+					}
+					document.write("<br>");
+				}
+
+
+
+				
+				
+			}
+
+			starpattern();
+		</script>
+	</body>
+</html>
